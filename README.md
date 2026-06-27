@@ -78,3 +78,4 @@ Documentation improved
 Update project notes
 Improve documentation
 Improve documentation
+Add more details
