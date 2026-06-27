@@ -1,0 +1,25 @@
+.card {
+  margin: 1rem auto;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 40rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(26,209,185,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(26, 209, 185, 0.25);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 20px rgba(26,209,185,0.08);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}

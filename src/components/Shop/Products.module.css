@@ -1,0 +1,48 @@
+.products h2 {
+  margin: 2rem auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #fff 0%, #a78bfa 60%, #1ad1b9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.products h2::after {
+  content: '';
+  display: block;
+  margin: 0.4rem auto 0;
+  width: 60%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #1ad1b9, #a78bfa);
+  box-shadow: 0 0 10px rgba(26, 209, 185, 0.5);
+}
+
+.products ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .products h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
+    margin: 1.5rem auto;
+  }
+
+  .products ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
