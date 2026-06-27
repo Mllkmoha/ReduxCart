@@ -76,3 +76,5 @@ Firebase is used as the backend database for storing and loading cart data.
 Project updated
 Documentation improved
 Update project notes
+Improve documentation
+Improve documentation
